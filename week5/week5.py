@@ -108,45 +108,46 @@
 # squaredValues = [b**2 for b in range(5)]
 # print(squaredValues)
 
-print("text adventure! except i don't have a text adventure in me and this is way too late so it's just gonna be kinda lame text that fulfills the technical requirements")
-decision = chr(input("press 1 for option 1, 2 for option 2"))
+print("text adventure!")
+# except i don't have a text adventure in me and this is way too late so it's just gonna be kinda lame text that fulfills the technical requirements. the assignment says there's no right or wrong theme and this is technically a theme so
+decision = int(input("press 1 for option 1, 2 for option 2: "))
 
 if decision == 1:
-    decision = chr(input("chosen so far: 1. press 1 for option 1, 2 for option 2"))
+    decision = int(input("chosen so far: 1. press 1 for option 1, 2 for option 2: "))
 
     if decision == 1:
-        decision = chr(input("chosen so far: 1, 1. press 1 for option 1, 2 for option 2"))
+        decision = int(input("chosen so far: 1, 1. press 1 for option 1, 2 for option 2: "))
 
         if decision == 1:
-            decision = chr(input("chosen so far: 1, 1, 1. this ends the text adventure"))
+            decision = print("chosen so far: 1, 1, 1. this ends the text adventure")
 
         elif decision == 2:
-            decision = chr(input("chosen so far: 1, 1, 2. this ends the text adventure"))
+            decision = print("chosen so far: 1, 1, 2. this ends the text adventure")
 
     elif decision == 2:
-        decision = chr(input("chosen so far: 1, 2. press 1 for option 1, 2 for option 2"))
+        decision = int(input("chosen so far: 1, 2. press 1 for option 1, 2 for option 2: "))
 
         if decision == 1:
-            decision = chr(input("chosen so far: 1, 2, 1. this ends the text adventure"))
+            decision = print("chosen so far: 1, 2, 1. this ends the text adventure")
 
         elif decision == 2:
-            decision = chr(input("chosen so far: 1, 2, 2. this ends the text adventure"))
+            decision = print("chosen so far: 1, 2, 2. this ends the text adventure")
 
 elif decision == 2:
-    decision = chr(input("chosen so far: 2. press 1 for option 1, 2 for option 2"))
+    decision = int(input("chosen so far: 2. press 1 for option 1, 2 for option 2: "))
 
     if decision == 1:
-        decision = chr(input("chosen so far: 2, 1. press 1 for option 1, 2 for option 2"))
+        decision = int(input("chosen so far: 2, 1. press 1 for option 1, 2 for option 2: "))
         if decision == 1:
-            decision = chr(input("chosen so far: 2, 1, 1. this ends the text adventure"))
+            decision = print("chosen so far: 2, 1, 1. this ends the text adventure")
 
         elif decision == 2:
-            decision = chr(input("chosen so far: 2, 1, 2. this ends the text adventure"))
+            decision = print("chosen so far: 2, 1, 2. this ends the text adventure")
 
     elif decision == 2:
-        decision = chr(input("chosen so far: 2, 2. press 1 for option 1, 2 for option 2"))
+        decision = int(input("chosen so far: 2, 2. press 1 for option 1, 2 for option 2: "))
         if decision == 1:
-            decision = chr(input("chosen so far: 2, 2, 1. this ends the text adventure"))
+            decision = print("chosen so far: 2, 2, 1. this ends the text adventure")
 
         elif decision == 2:
-            decision = chr(input("chosen so far: 2, 2, 2. this ends the text adventure"))
+            decision = print("chosen so far: 2, 2, 2. this ends the text adventure")
