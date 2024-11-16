@@ -1,21 +1,21 @@
-# x = 5
-# if x > 10:
-#     print("X is greater than 10!")
-# elif x > 3:
-#     print("X is greater than 3!")
+# b = 5
+# if b > 10:
+#     print("b is greater than 10!")
+# elif b > 3:
+#     print("b is greater than 3!")
 # else:
 #     print("neither of the other things happened")
 
-# x = 10
-# if x > 5:
-#     if x < 15:
-#         print("X is between 5 and 15!")
+# b = 10
+# if b > 5:
+#     if b < 15:
+#         print("b is between 5 and 15!")
 #     else:
-#         print("X is greater than 15!")
+#         print("b is greater than 15!")
 # else:
-#     print("X is less than 5!")
+#     print("b is less than 5!")
 
-# username = "BlueDogXL"
+# username = "BlueDogbL"
 # password = "12345"
 # userTry = input("Enter username: ")
 # passTry = input("Enter password: ")
@@ -34,22 +34,22 @@
 #     discountPercent = 0.05
 # print((totalPrice ) * (1 - discountPercent))
 
-# x = 1
-# result = "even" if x % 2 == 0 else "odd"
+# b = 1
+# result = "even" if b % 2 == 0 else "odd"
 # print(result)
 
 # def dummyFunction():
 #     print("Dummy statement")
 
-# x = 11
+# b = 11
 
-# if x > 10 or dummyFunction():
+# if b > 10 or dummyFunction():
 #     print("dummy value")
 
-# x = 4
+# b = 4
 # y = 8
 
-# x, y = y, x # swap the variables without a temp variable
+# b, y = y, b # swap the variables without a temp variable
 
 # a, b, c, d = 1, 2, 3, 4
 # print(a, b, c, d)
@@ -89,7 +89,7 @@
 #     for j in range(2):
 #         print(f"{i} , {j}")
 
-# names = ['Alex', 'Nat', 'Lulu']
+# names = ['Aleb', 'Nat', 'Lulu']
 # scores = [5, 1, 4]
 # for name, score in zip(names, scores):
 #     print(f"{name}: {score}")
@@ -105,6 +105,48 @@
 # for cleanNumber in cleanData:
 #     print(cleanNumber)
 
-# squaredValues = [x**2 for x in range(5)]
+# squaredValues = [b**2 for b in range(5)]
 # print(squaredValues)
 
+print("text adventure! except i don't have a text adventure in me and this is way too late so it's just gonna be kinda lame text that fulfills the technical requirements")
+decision = chr(input("press 1 for option 1, 2 for option 2"))
+
+if decision == 1:
+    decision = chr(input("chosen so far: 1. press 1 for option 1, 2 for option 2"))
+
+    if decision == 1:
+        decision = chr(input("chosen so far: 1, 1. press 1 for option 1, 2 for option 2"))
+
+        if decision == 1:
+            decision = chr(input("chosen so far: 1, 1, 1. this ends the text adventure"))
+
+        elif decision == 2:
+            decision = chr(input("chosen so far: 1, 1, 2. this ends the text adventure"))
+
+    elif decision == 2:
+        decision = chr(input("chosen so far: 1, 2. press 1 for option 1, 2 for option 2"))
+
+        if decision == 1:
+            decision = chr(input("chosen so far: 1, 2, 1. this ends the text adventure"))
+
+        elif decision == 2:
+            decision = chr(input("chosen so far: 1, 2, 2. this ends the text adventure"))
+
+elif decision == 2:
+    decision = chr(input("chosen so far: 2. press 1 for option 1, 2 for option 2"))
+
+    if decision == 1:
+        decision = chr(input("chosen so far: 2, 1. press 1 for option 1, 2 for option 2"))
+        if decision == 1:
+            decision = chr(input("chosen so far: 2, 1, 1. this ends the text adventure"))
+
+        elif decision == 2:
+            decision = chr(input("chosen so far: 2, 1, 2. this ends the text adventure"))
+
+    elif decision == 2:
+        decision = chr(input("chosen so far: 2, 2. press 1 for option 1, 2 for option 2"))
+        if decision == 1:
+            decision = chr(input("chosen so far: 2, 2, 1. this ends the text adventure"))
+
+        elif decision == 2:
+            decision = chr(input("chosen so far: 2, 2, 2. this ends the text adventure"))
