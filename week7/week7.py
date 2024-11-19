@@ -90,12 +90,87 @@
 #     else: print("Invalid input!")
 
 
-def sumOfAll(*args):
-    result = 0
-    for num in args:
-        result = result + num
-    return result
+# def sumOfAll(*args):
+#     result = 0
+#     for num in args:
+#         result = result + num
+#     return result
 
-print(sumOfAll(10))
-print(sumOfAll(1, 2, 3))
-print(sumOfAll(1, 2, 3, 4, 5, 6, 7, 8, 9))
+# print(sumOfAll(10))
+# print(sumOfAll(1, 2, 3))
+# print(sumOfAll(1, 2, 3, 4, 5, 6, 7, 8, 9))
+
+
+eaten = False
+replay = True
+def intro():
+    print("You are in a room with a marshmallow. You can either eat the marshmallow immediately, or wait 15 minutes and get two marshmallows.")
+    firstChoice(input("Do you eat the marshmallow? \n No (A) \n Yes (B) \n > "))
+
+def firstChoice(choice):
+    global eaten # this is here for scope reasons!
+    if choice.upper() == "A":
+        print(" > No")
+        print("You leave the marshmallow where it is. It sure does look good, though...")
+    elif choice.upper() == "B":
+        eaten = True
+        print(" > Yes")
+        print("You eat the marshmallow. Delicious!")
+    else: firstChoice(input("> "))
+    if eaten == False:
+        secondChoice(input("5 minutes have passed. Do you eat the marshmallow? \n No (A) \n Yes (B) \n > "))
+    else:
+        secondChoice("B")
+
+def secondChoice(choice):
+    global eaten
+    if choice.upper() == "A":
+        eaten = False
+        print(" > No")
+        print("You leave the marshmallow where it is. It's not getting any less tasty-looking...")
+    elif choice.upper() == "B" and eaten == True:
+        print("Five minutes pass.")
+    elif choice.upper() == "B":
+        eaten = True
+        print(" > Yes")
+        print("You eat the marshmallow. Delicious!")
+    else: secondChoice(input("> "))
+    if eaten == False:
+        thirdChoice(input("10 minutes have passed. Do you eat the marshmallow? \n No (A) \n Yes (B) \n > "))
+    else:
+        thirdChoice("B")
+
+def thirdChoice(choice):
+    global eaten
+    if choice.upper() == "A":
+        eaten = False
+        print(" > No")
+        print("You leave the marshmallow where it is. And then...")
+    elif choice.upper() == "B" and eaten == True:
+        print("Another five minutes pass. And then...")
+    elif choice.upper() == "B":
+        print(" > Yes")
+        print("You eat the marshmallow. Delicious!")
+    else: thirdChoice(input("> "))
+    ending()
+
+def ending():
+    print("A researcher enters the room. The fifteen minutes are over! They check the table...")
+    if eaten == True:
+        print("... to see the marshmallow gone. They escort you out of the room. \nYou got one marshmallow! Hope it was worth it.")
+    else:
+        print("... to see the marshmallow still there. They pull another marshmallow from inside their coat, and hand both of them to you. They escort you out of the room. \nYou got two marshmallows! And after staring at that one for so long, you're ready to dig in.")
+
+def askPlayAgain(choice):
+    global replay
+    if choice.upper() == "Y":
+        return True
+    else:
+        return False
+
+while replay == True:
+    eaten = False # resets the choice on repeat playthroughs
+    intro()
+    replay = askPlayAgain(input("Play again? Y/N "))
+    
+
