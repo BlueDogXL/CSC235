@@ -1,0 +1,1 @@
+# reminder for the future: she'll accept the ai thing even though it's been a week

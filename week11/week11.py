@@ -36,39 +36,67 @@
 # myStudent = Student("Alex", 21, "AC20174383")
 # myStudent.displayInfo()
 
-class LibraryItem:
-    def __init__(self, title):
-        self.title = title
+# class LibraryItem:
+#     def __init__(self, title):
+#         self.title = title
 
-    def getItemDetails(self):
-        print(f"Title: {self.title}")
+#     def getItemDetails(self):
+#         print(f"Title: {self.title}")
 
-class Book(LibraryItem):
-    def __init__(self, title, pageCount):
-        super().__init__(title)
-        self.pageCount = pageCount
+# class Book(LibraryItem):
+#     def __init__(self, title, pageCount):
+#         super().__init__(title)
+#         self.pageCount = pageCount
 
-    def getItemDetails(self):
-        super().getItemDetails()
-        print(f"Page count: {self.pageCount}")
+#     def getItemDetails(self):
+#         super().getItemDetails()
+#         print(f"Page count: {self.pageCount}")
 
-class Magazine(LibraryItem):
-    def __init__(self, title, edition):
-        super().__init__(title)
-        self.edition = edition
+# class Magazine(LibraryItem):
+#     def __init__(self, title, edition):
+#         super().__init__(title)
+#         self.edition = edition
 
-    def getItemDetails(self):
-        super().getItemDetails()
-        print(f"Edition: {self.edition}")
+#     def getItemDetails(self):
+#         super().getItemDetails()
+#         print(f"Edition: {self.edition}")
 
-class DVD(LibraryItem):
-    def __init__(self, title, runtime):
-        super().__init__(title)
-        self.runtime = runtime
+# class DVD(LibraryItem):
+#     def __init__(self, title, runtime):
+#         super().__init__(title)
+#         self.runtime = runtime
 
-    def getItemDetails(self):
-        super().getItemDetails()
-        print(f"Runtime: {self.runtime}")
+#     def getItemDetails(self):
+#         super().getItemDetails()
+#         print(f"Runtime: {self.runtime}")
 
-newBook = Book("Example Book", 300)
-newBook.getItemDetails()
+# newBook = Book("Example Book", 300)
+# newBook.getItemDetails()
+
+# class PaymentMethod:
+#     def processPayment(self, amount):
+#         pass
+
+# class CreditCardPayment(PaymentMethod):
+#     def processPayment(self, amount):
+#         print(f"${amount} has been charged to your credit card!")
+
+# class DebitCardPayment(PaymentMethod):
+#     def processPayment(self, amount):
+#         print(f"${amount} has been charged to your debit card!")
+
+# class PayPalPayment(PaymentMethod):
+#     def processPayment(self, amount):
+#         print(f"${amount} has been charged to your PayPal account!")
+        
+# def processTransaction(paymentMethod, amount):
+#     paymentMethod.processPayment(paymentMethod, amount)
+
+# if __name__ == "__main__":
+#     paymentMethods = [CreditCardPayment(), DebitCardPayment(), PayPalPayment()]
+
+# processTransaction(CreditCardPayment, 50)
+
+students = {
+    {""}
+}
