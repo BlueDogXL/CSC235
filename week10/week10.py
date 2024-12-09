@@ -16,7 +16,7 @@ from tkinter import messagebox
 
 root = tk.Tk()
 root.title("Login")
-root.geometry("300x400")
+root.geometry("400x300")
 loginTitle = tk.Label(root, text = "Login").pack()
 correctUsername = "BlueDogXL"
 correctPassword = "12345"
