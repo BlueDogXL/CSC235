@@ -96,7 +96,40 @@
 #     paymentMethods = [CreditCardPayment(), DebitCardPayment(), PayPalPayment()]
 
 # processTransaction(CreditCardPayment, 50)
+stuffList = []
+contBool = True
 
-students = {
-    {""}
-}
+def addToList(item):
+    print(f"Adding \"{item}\" to list!")
+    stuffList.append(item)
+
+def printItem(number):
+    try:
+        print(f"List item {number} is: {stuffList[number]}")
+    except ValueError:
+        printItem(input("Please enter a number: "))
+    except IndexError:
+        print(f"There is nothing at spot {number}!")
+
+def printEntireList():
+    print("Printing entire list!")
+    for i in stuffList:
+        print(i)
+
+def askPlayAgain(choice):
+    if choice.upper() == "Y":
+        return True
+    else:
+        return False
+
+while contBool == True:
+    choice = int(input("Enter a number to select an option.\n1. Add item to the list\n2. Print a specific list item\n3. Print the entire list.\n"))
+    if choice == 1:
+        itemToAdd = input("Enter what you would like to add: ")
+        addToList(itemToAdd)
+    elif choice == 2:
+        printItem(int(input("Enter a number. The list begins at 0! ")))
+    elif choice == 3:
+        printEntireList()
+
+    contBool = askPlayAgain(input("Continue? Y/N: "))
